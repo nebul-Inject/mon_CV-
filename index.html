@@ -1,0 +1,287 @@
+<html><head><base href="." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enzo Nique - CV et Lettre de Motivation</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #2563eb;
+    --secondary: #1d4ed8;
+    --accent: #3b82f6;
+    --light: #f8fafc;
+    --dark: #1e293b;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .hospital-cross {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  body {
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 4rem 0 6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    margin-bottom: -4rem;
+  }
+
+  .header-content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .section-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .skill-tag {
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .skill-tag:hover {
+    transform: scale(1.05);
+    background: var(--primary);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .contact-icon {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .contact-item a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-item a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+  }
+
+  .letter {
+    line-height: 1.8;
+  }
+
+  .letter p {
+    margin-bottom: 1rem;
+  }
+
+  .animate-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 3rem 0 5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <svg class="hospital-cross" width="40" height="40" viewBox="0 0 40 40">
+    <rect x="17" y="8" width="6" height="24" fill="#10B981" rx="2"/>
+    <rect x="8" y="17" width="24" height="6" fill="#10B981" rx="2"/>
+  </svg>
+
+  <header>
+    <div class="container">
+      <div class="header-content animate-in">
+        <h1>Enzo Nique</h1>
+        <p class="header-subtitle">Futur Expert en Cybersécurité & Informatique</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card animate-in">
+      <h2 class="section-title">Coordonnées</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <div>
+            <p>29 Rue du Vieux Bourg</p>
+            <p>45200 Villemandeur</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 2L11 13"></path>
+            <path d="M22 2L15 22l-4-9-9-4 22-7z"></path>
+          </svg>
+          <a href="mailto:squalequad@proton.me">squalequad@proton.me</a>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <div>
+            <p><strong>Personnel :</strong> <a href="tel:+33619362281">06 19 36 22 81</a></p>
+            <p><strong>Responsable légal :</strong> <a href="tel:+33628256048">06 28 25 60 48</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card animate-in">
+      <h2 class="section-title">Compétences (En cours d'acquisition)</h2>
+      <div class="skills">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">HTML</div>
+        <div class="skill-tag">Architecture réseau</div>
+        <div class="skill-tag">Montage PC</div>
+        <div class="skill-tag">Cybersécurité</div>
+      </div>
+    </div>
+
+    <div class="card animate-in">
+      <h2 class="section-title">Lettre de Motivation</h2>
+      <div class="letter">
+        <p>Hôpital d'Amilly<br>
+        658 Rue des Bourgoins<br>
+        45200 Amilly</p>
+
+        <p><strong>Objet : Demande de stage en informatique – Classe de Seconde</strong></p>
+
+        <p>Madame, Monsieur,</p>
+
+        <p>Actuellement élève en classe de seconde au lycée Château Blanc, je suis à la recherche d'un stage d'observation en milieu professionnel, prévu du 10 au 27 juin 2025. Passionné par l'informatique et la cybersécurité, je souhaiterais vivement intégrer la section informatique de votre hôpital pour ce stage.</p>
+
+        <p>Cela fait plus d'un mois que je cherche activement un stage, et il m'est essentiel d'en trouver un pour valider mon année scolaire. Travailler dans votre établissement serait pour moi une opportunité prestigieuse et enrichissante, en cohérence avec mon projet d'avenir. Si je réussis mon année, je poursuivrai mes études dans la filière CIEL (Cybersécurité Informatique Électronique LAN).</p>
+
+        <p>Depuis mes 10 ans, je consacre mon temps libre à explorer l'univers de l'informatique. J'ai créé plusieurs sites web dans le cadre scolaire, acquis des bases en programmation (Python et HTML), ainsi qu'en architecture réseau, et je sais monter un PC. Ces expériences m'ont permis de développer des compétences variées et de renforcer ma passion pour ce domaine.</p>
+
+        <p>Sérieux, curieux et organisé, je suis prêt à m'investir pleinement dans les missions qui me seront confiées et à découvrir les coulisses du fonctionnement informatique d'un établissement aussi essentiel qu'un hôpital.</p>
+
+        <p>Je reste à votre disposition pour un entretien ou toute information complémentaire. Je vous remercie par avance pour l'attention portée à ma candidature et vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations respectueuses.</p>
+
+        <p style="margin-top: 2rem;">Enzo Nique</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const elements = document.querySelectorAll('.animate-in');
+      elements.forEach((element, index) => {
+        element.style.animationDelay = `${index * 0.2}s`;
+      });
+    });
+  </script>
+</body>
+</html>
